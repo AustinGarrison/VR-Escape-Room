@@ -57,7 +57,6 @@ public class SafeDoor : PhysicsGadgetHingeAngleReader
             Mid();
         }
 
-        Debug.Log((transform.rotation.y).ToString());
         if(transform.rotation.y == angleToLock)
         {
             LockDoor();
