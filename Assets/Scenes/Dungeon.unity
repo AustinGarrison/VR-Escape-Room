@@ -265,6 +265,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1870340521919012934, guid: d574fb46fa77aa24eaffa8a8001ab538, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870340522650753185, guid: d574fb46fa77aa24eaffa8a8001ab538, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870340522650753189, guid: d574fb46fa77aa24eaffa8a8001ab538, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1870340523689141921, guid: d574fb46fa77aa24eaffa8a8001ab538, type: 3}
       propertyPath: m_Name
       value: Auto Hand Player Container Variant
