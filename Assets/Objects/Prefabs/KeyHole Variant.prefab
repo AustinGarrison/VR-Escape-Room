@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919806965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1e-15, y: 1e-15, z: 0.0000000079059}
+  m_LocalPosition: {x: 0.0012, y: 0, z: 0.0000000079059}
   m_LocalScale: {x: 0.020081768, y: 0.0056461133, z: 0.007036291}
   m_Children: []
   m_Father: {fileID: 896323696639678855}
@@ -94,7 +94,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 0.74, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1919806967
 MonoBehaviour:
@@ -108,9 +108,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3049614f012dedc469207bf41aa8944c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  body: {fileID: 1761753625}
+  body: {fileID: 0}
   grabbable: {fileID: 0}
-  stabIndex: 1
+  stabIndex: 0
   maxStabbers: 1
   positionDamper: 1000
   rotationDamper: 1000
@@ -146,31 +146,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 110cf4e2616997344b2c2a5727697987, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.1259
+      value: -4.508
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 110cf4e2616997344b2c2a5727697987, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2018
+      value: 0.883
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 110cf4e2616997344b2c2a5727697987, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.8688
+      value: 0.907
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 110cf4e2616997344b2c2a5727697987, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.27059805
+      value: 0.0000020191073
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 110cf4e2616997344b2c2a5727697987, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.27059802
+      value: -0.0000020191073
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 110cf4e2616997344b2c2a5727697987, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.65328157
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 110cf4e2616997344b2c2a5727697987, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.65328145
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 110cf4e2616997344b2c2a5727697987, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -182,7 +182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 110cf4e2616997344b2c2a5727697987, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 110cf4e2616997344b2c2a5727697987, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -204,22 +204,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 110cf4e2616997344b2c2a5727697987, type: 3}
   m_PrefabInstance: {fileID: 863240710672121452}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &1761753625
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521204845634995005}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &1761753623
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -233,64 +217,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020000013, y: 0.02000001, z: 0.020000009}
   m_Center: {x: 0.0000009536743, y: 0.00000023841858, z: 0}
---- !u!114 &1761753624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521204845634995005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ignoreMe: 0
-  body: {fileID: 0}
-  hightlightMaterial: {fileID: 2100000, guid: 5f2dd013d4c137746ad1d43ef197affe, type: 2}
-  isGrabbable: 1
-  CopySettings: {fileID: 0}
-  singleHandOnly: 0
-  allowHeldSwapping: 1
-  instantGrab: 0
-  ignoreWeight: 1
-  maintainGrabOffset: 0
-  parentOnGrab: 1
-  throwPower: 1
-  jointBreakForce: 2500
-  showAdvancedSettings: 0
-  grabType: 0
-  handType: 0
-  makeChildrenGrabbable: 1
-  pullApartBreakOnly: 1
-  customGrabJoint: {fileID: 0}
-  ignoreReleaseTime: 0.01
-  grabPriorityWeight: 1
-  heldPositionOffset: {x: 0, y: 0, z: 0}
-  heldRotationOffset: {x: 0, y: 0, z: 0}
-  jointedBodies: []
-  heldIgnoreColliders: []
-  showEvents: 1
-  onGrab:
-    m_PersistentCalls:
-      m_Calls: []
-  onRelease:
-    m_PersistentCalls:
-      m_Calls: []
-  showAdvancedEvents: 0
-  onSqueeze:
-    m_PersistentCalls:
-      m_Calls: []
-  onUnsqueeze:
-    m_PersistentCalls:
-      m_Calls: []
-  onHighlight:
-    m_PersistentCalls:
-      m_Calls: []
-  onUnhighlight:
-    m_PersistentCalls:
-      m_Calls: []
-  OnJointBreak:
-    m_PersistentCalls:
-      m_Calls: []
-  lockHandOnGrab: 0

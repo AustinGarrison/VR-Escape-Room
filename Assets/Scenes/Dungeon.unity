@@ -123,6 +123,48 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &433129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1740556697170777548, guid: e90fde12e8de1d74695a1e48255e8262, type: 3}
+  m_PrefabInstance: {fileID: 1207302228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &433130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935aaf7da50abf94697c8d70a7a71efe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ignoreMe: 0
+  instantPull: 0
+  archMultiplier: 0.6
+  gravitationVelocity: 1
+  rotate: 1
+  rotationSpeed: 1
+  ignoreHighlights: 1
+  targetedMaterial: {fileID: 0}
+  selectedMaterial: {fileID: 0}
+  showEvents: 1
+  OnPull:
+    m_PersistentCalls:
+      m_Calls: []
+  StartTargeting:
+    m_PersistentCalls:
+      m_Calls: []
+  StopTargeting:
+    m_PersistentCalls:
+      m_Calls: []
+  StartSelecting:
+    m_PersistentCalls:
+      m_Calls: []
+  StopSelecting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &70217057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1400,27 +1442,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c94a574020d3de429d0c295b3a83db4, type: 3}
---- !u!1 &1100181852 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9034129558882082425, guid: 66dbcafc4a44e414f8b0d4dc1e80a59e, type: 3}
-  m_PrefabInstance: {fileID: 1044344654651848235}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1100181861
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1100181852}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &1183347192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1555,6 +1576,10 @@ PrefabInstance:
     - target: {fileID: 1740556697170777548, guid: e90fde12e8de1d74695a1e48255e8262, type: 3}
       propertyPath: m_Name
       value: Jug_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740556697170777550, guid: e90fde12e8de1d74695a1e48255e8262, type: 3}
+      propertyPath: OnBreak.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BreakTheThing
       objectReference: {fileID: 0}
     - target: {fileID: 1740556697170777551, guid: e90fde12e8de1d74695a1e48255e8262, type: 3}
       propertyPath: hidden
@@ -2130,8 +2155,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1919806967, guid: 94d6988c30d61244fadb74cedad7dfb4, type: 3}
-      propertyPath: stabIndex
-      value: 0
+      propertyPath: body
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 521204845634995005, guid: 94d6988c30d61244fadb74cedad7dfb4, type: 3}
       propertyPath: m_Name
@@ -2143,7 +2168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 896323696639678855, guid: 94d6988c30d61244fadb74cedad7dfb4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.601
+      value: -4.508
       objectReference: {fileID: 0}
     - target: {fileID: 896323696639678855, guid: 94d6988c30d61244fadb74cedad7dfb4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2151,7 +2176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 896323696639678855, guid: 94d6988c30d61244fadb74cedad7dfb4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.829
+      value: 0.907
       objectReference: {fileID: 0}
     - target: {fileID: 896323696639678855, guid: 94d6988c30d61244fadb74cedad7dfb4, type: 3}
       propertyPath: m_LocalRotation.w
